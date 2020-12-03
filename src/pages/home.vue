@@ -10,8 +10,9 @@
 			<el-col :span="12">
 				<el-row class="art-item">
 					<router-link to="/article" tag="span">
-					<el-card shadow="hover">
-						<h5><img src="../assets/star.png" style="width: 1.25rem;height: 1.25rem;" />          这是标题啊啊啊啊啊啊啊啊</h5>
+					<el-card>
+						<div style="position: absolute;top: 0;left: 0;z-index: 99999;"><img src="../assets/zhiding.png" style="width: 2.25rem;height: 2.25rem;" /></div>
+						<h5>这是标题啊啊啊啊啊啊啊啊</h5>
 						<el-row class="art-body">
 							<div class="side-img hidden-sm-and-down">
 								<img class="art-banner" src="../assets/vue.jpg">
