@@ -4,6 +4,9 @@
 			<el-menu-item class="mr-auto">
 				<img style="width: 30px;height: 30px;" src="../assets/logo.png" />
 			</el-menu-item>
+			<el-menu-item class="mr-auto" style="cursor: default;">
+				<span>签名</span>
+			</el-menu-item>
 			<el-menu-item index="/home">{{$t("header.home")}}</el-menu-item>
 			<el-menu-item index="/archive">{{$t("header.archive")}}</el-menu-item>
 			<el-menu-item index="/about">{{$t("header.about")}}</el-menu-item>
