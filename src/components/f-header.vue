@@ -2,19 +2,27 @@
 	<div>
 		<el-menu :default-active="activeIndex" class="d-flex" mode="horizontal" router="true" type="flex">
 			<el-menu-item class="mr-auto">
-				<img style="width: 30px;height: 30px;" src="../assets/logo.png" />
+				<router-link  to="/home">
+					<img style="width: 30px;height: 30px;" src="../assets/logo.png" />
+				</router-link>
+				
 			</el-menu-item>
 			<el-menu-item class="mr-auto" style="cursor: default;">
 				<span>签名</span>
 			</el-menu-item>
+			<el-menu-item >
+				<el-input 
+					size="small"
+					class="sinput"
+				    placeholder="请输入内容"
+					style="border: none;"
+				    >
+				</el-input>
+			</el-menu-item>
 			<el-menu-item index="/home">{{$t("header.home")}}</el-menu-item>
-			<el-menu-item index="/archive">{{$t("header.archive")}}</el-menu-item>
+			
 			<el-menu-item index="/about">{{$t("header.about")}}</el-menu-item>
-			<el-submenu>
-				<template slot="title">{{$t("header.language")}}</template>
-				<el-menu-item @click="toggleLang('zh')">{{$t("header.chinaese")}}</el-menu-item>
-				<el-menu-item @click="toggleLang('en')">{{$t("header.english")}}</el-menu-item>
-			</el-submenu>
+			
 		</el-menu>
 	</div>
 </template>
@@ -49,5 +57,15 @@
 </script>
 
 <style scoped>
-
+	input{
+		border: none;
+	}
+  .sinput > input{
+	  border: none;
+  }
+  .el-input--small .el-input__inner {
+      height: 32px;
+      line-height: 32px;
+      border: none;
+  }
 </style>

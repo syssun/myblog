@@ -18,14 +18,14 @@
 							</router-link>
 							<div>
 								<div style="width: 100%;height: 24pxs;  text-align: right;justify-content: right;justify-items: right;justify-self: right;position: relative;">
-									<span class="t-span" style="position: absolute;top: 0;left: 0;">
+									<span class="t-span" style="position: absolute;top: 0;left: 0;cursor: default;">
 										<img class="t-img" src="../assets/shijian.png" />
 										<span class="yuedu">2020-12-04</span>
 									</span>
 									<span class="t-span">
 										<img class="t-img" src="../assets/dianzan.png" />
 										<span class="yuedu">100</span>
-										<img class="t-img" src="../assets/yuedu.png" />
+										<img class="t-img" style="cursor: default;" src="../assets/yuedu.png" />
 										<span class="yuedu">100</span>
 									</span>
 
