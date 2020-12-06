@@ -1,18 +1,12 @@
 <template>
-	<div class="tag">
+	<div class="myinfo">
 		<el-card class="box-card">
-			<div slot="header" class="d-flex align-items-center">
-				<img class="card-icon" src="../assets/biaoqian.png" />
-				<span>{{$t('tag.tag')}}</span>
+			<div slot="header" class="car-header" style="padding: 0;">
+				<img class="card-icon" src="../assets/vue.jpg" />
+				<h6>君子不器</h6>
 			</div>
 			<div class="text item">
-				<el-tag size="mini" class="tag-item" @click="tag('Java')">Java[12]</el-tag>
-				<el-tag size="mini" class="tag-item" type="success" @click="tag('SpringBoot')">SpringBoot[8]</el-tag>
-				<el-tag size="mini" class="tag-item" type="info" @click="tag('HTML')">HTML[8]</el-tag>
-				<el-tag size="mini" class="tag-item" type="warning" @click="tag('Mysql')">Mysql[5]</el-tag>
-				<el-tag size="mini" class="tag-item" type="danger" @click="tag('Vue')">Vue[3]</el-tag>
-				<el-tag size="mini" class="tag-item" type="info" @click="tag('jQuery')">jQuery[6]</el-tag>
-				<el-tag size="mini" class="tag-item" type="success" @click="tag('SpringCloud')">SpringCloud[9]</el-tag>
+				<p>不到最后，焉知生死！</p>
 			</div>
 		</el-card>
 	</div>
@@ -20,11 +14,11 @@
 
 <script>
 	export default {
-		name: 'tag',
+		name: 'myinfo',
 		methods: {
 			tag(name) {
 				this.$router.push({
-					name: 'tag',
+					name: 'myinfo',
 					params: {
 						'name': name
 					}
@@ -35,22 +29,50 @@
 </script>
 
 <style scoped>
-	.box-card .item:hover {
+
+	.box-card .car-header:hover {
 		color: #409EFF;
 		cursor: pointer;
 	}
-	
+	.box-card .car-header,.text {
+		padding: 10px;
+		justify-content: center;
+		justify-items: center;
+		justify-self: center;
+		text-align: center;
+	}
 	.box-card span {
 		font-weight: bold;
 	}
 	
 	.card-icon {
-		width: 20px;
-		height: 20px;
-		margin-right: 10px;
+		width: 80px;
+		height: 80px;
+		border-radius: 80px;
+		justify-content: center;
+		justify-items: center;
+		justify-self: center;
 	}
 	
 	.tag-item {
 		margin-right: 10px;
 	}
+	
+	img.card-icon {
+		width: 80px;
+		height: 80px;
+		border-radius: 80px;
+		justify-content: center;
+		justify-items: center;
+		justify-self: center;
+		transition: all 0.6s;
+	}
+	
+	img.card-icon:hover {
+		margin-bottom: 16px;
+		margin-top: 10px;
+		transform: scale(1.2);
+	}
+	
+	
 </style>

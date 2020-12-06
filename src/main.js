@@ -9,8 +9,10 @@ import './assets/style.css'
 import fHeader from './components/f-header'
 import fFooter from './components/f-footer'
 import i18n from './i18n/i18n'
+import mavonEditor from 'mavon-editor'
+import 'mavon-editor/dist/css/index.css'
 
-
+Vue.use(mavonEditor)
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(VueRouter)

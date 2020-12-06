@@ -3,7 +3,7 @@ import about from './pages/about'
 import article from './pages/article'
 import archive from './pages/archive'
 import apply from './pages/apply'
-
+import edit from './pages/edit'
 const routes = [
 {
 	path:'/',
@@ -38,6 +38,11 @@ const routes = [
     path:'/apply',
     name:'apply',
     component:apply
+},
+{
+    path:'/edit',
+    name:'edit',
+    component:edit
 },
 {
     path:'*',

@@ -3,7 +3,7 @@
 		<el-row id="artList" type="flex" justify="space-around">
 			<el-col :span="4" class="hidden-sm-and-down" id="leftsSide">
 				<div class="item">
-					<tag></tag>
+					<myinfo></myinfo>
 				</div>
 
 			</el-col>
@@ -62,11 +62,13 @@
 <script>
 	import friend from '../components/friend'
 	import tag from '../components/tag'
+	import myinfo from '../components/myinfo'
 	export default {
 		name: 'home',
 		components: {
 			friend,
-			tag
+			tag,
+			myinfo,
 		}
 	}
 </script>

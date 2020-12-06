@@ -14,7 +14,7 @@
 				<el-input 
 					size="small"
 					class="sinput"
-				    placeholder="请输入内容"
+				    placeholder="请输入内容,按回车"
 					style="border: none;"
 				    >
 				</el-input>
@@ -22,6 +22,7 @@
 			<el-menu-item index="/home">{{$t("header.home")}}</el-menu-item>
 			
 			<el-menu-item index="/about">{{$t("header.about")}}</el-menu-item>
+			<el-menu-item index="/edit">发表</el-menu-item>
 			
 		</el-menu>
 	</div>
